@@ -22,3 +22,4 @@ go test -run "^NameOfTest$"
 [Golang test from ithelp](https://ithelp.ithome.com.tw/articles/10204692) <br />
 [Go test run from stackoverflow](https://stackoverflow.com/questions/16935965/how-to-run-test-cases-in-a-specified-file) <br />
 [Blog for Algorithm and Data structure](http://alrightchiu.github.io/SecondRound/mu-lu-yan-suan-fa-yu-zi-liao-jie-gou.html) <br />
+[Python tips and tricks from ptt](https://www.ptt.cc/bbs/Soft_Job/M.1627032495.A.65E.html)
