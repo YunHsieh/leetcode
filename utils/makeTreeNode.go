@@ -14,13 +14,10 @@ func ListCovertToTreeNode(numArray []int) TreeNode {
     if len(numArray) == 0 {
         return TreeNode{}
     }
-    firstElement := numArray[0]
-    
-    numArray = numArray[1:]
+    firstElement, numArray := numArray[0], numArray[1:]
     root := TreeNode{Val: firstElement}
     tempSlice := []*TreeNode{&root}
-    currentNode := tempSlice[0]
-    tempSlice = tempSlice[1:]
+    currentNode, tempSlice := tempSlice[0], tempSlice[1:]
     isLeft := true
     for len(numArray) > 0 {
         firstElement, numArray = numArray[0], numArray[1:]
