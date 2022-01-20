@@ -1,4 +1,4 @@
-package main
+package utils
 
 import (
 	. "fmt"
@@ -8,6 +8,11 @@ type TreeNode struct {
     Val   int
     Left  *TreeNode
     Right *TreeNode
+}
+
+type ListNode struct {
+    Val int
+    Next *ListNode
 }
 
 func ListCovertToTreeNode(numArray []int) TreeNode {
@@ -41,6 +46,37 @@ func ListCovertToTreeNode(numArray []int) TreeNode {
         }
     }
     return root
+}
+
+func SliceToListNode(numArray []int) *ListNode {
+    if len(numArray) == 0 {
+        return nil
+    }
+    head := &ListNode{
+        Val: numArray[0],
+    }
+    currentNode := head
+    for i:=1; len(numArray)>i; i++ {
+        nextNode := &ListNode{
+            Val: numArray[i],
+        }
+        currentNode.Next, currentNode = nextNode, nextNode
+    }
+    return head
+}
+
+func CompareTwoListNode(node *ListNode,targetNode *ListNode) bool {
+    for node != nil && targetNode != nil {
+        if node.Val == targetNode.Val {
+            node, targetNode = node.Next, targetNode.Next
+        } else {
+            return false
+        }
+    }
+    if node != nil || targetNode != nil {
+        return false
+    }
+    return true
 }
 
 func sortedArrayToBST(nums []int) *TreeNode {
