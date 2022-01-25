@@ -22,4 +22,5 @@ go test -run "^NameOfTest$"
 [Golang test from ithelp](https://ithelp.ithome.com.tw/articles/10204692) <br />
 [Go test run from stackoverflow](https://stackoverflow.com/questions/16935965/how-to-run-test-cases-in-a-specified-file) <br />
 [Blog for Algorithm and Data structure](http://alrightchiu.github.io/SecondRound/mu-lu-yan-suan-fa-yu-zi-liao-jie-gou.html) <br />
-[Python tips and tricks from ptt](https://www.ptt.cc/bbs/Soft_Job/M.1627032495.A.65E.html)
+[Python tips and tricks from ptt](https://www.ptt.cc/bbs/Soft_Job/M.1627032495.A.65E.html) <br />
+[heap from meidum](https://medium.com/@Kadai/%E8%B3%87%E6%96%99%E7%B5%90%E6%A7%8B%E5%A4%A7%E4%BE%BF%E7%95%B6-binary-heap-ec47ca7aebac) <br />
