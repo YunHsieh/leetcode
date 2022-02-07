@@ -4,12 +4,17 @@ import (
 	"testing"
 )
 
-func TestSample(t *testing.T) {
-    testSample := 1
+func TestSampleScence1(t *testing.T) {
+    result := testFunc()
+    ans := 1
 
-    if testSample == 1 {
+    if result == ans {
         t.Log("success")
     } else {
-        t.Error("fail")
+        t.Error("fail: ", result)
     }
+}
+
+func testFunc() int {
+    return 1
 }
