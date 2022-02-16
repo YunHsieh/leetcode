@@ -8,12 +8,13 @@ type TreeNode struct {
 }
 
 func (t *TreeNode) Push(Val int) {
-	NewNode := &TreeNode{Val: Val}
-	NewNode.Next = t
+	old := *t
+	NewNode := TreeNode{Val: Val,}
 	if t != nil {
-		t.Prev = NewNode
+		t.Prev = &NewNode
 	}
-	t = NewNode
+	*t = NewNode
+	t.Next = &old
 }
 
 func (t *TreeNode) Insert(PrevNode *TreeNode, Val int) {
@@ -54,10 +55,11 @@ func (t *TreeNode) Show() {
 
 func main() {
 	root := &TreeNode{Val: 15}
-	root.Push(3)
-	root.Push(5)
-	root.Insert(root.Prev, 100)
-	root.Append(77)
-	root.Append(80)
+	// root.Push(3)
+	// root.Push(5)
+	// root.Insert(root.Prev, 100)
+	// root.Append(77)
+	// root.Append(80)
+	root.Push(10)
 	root.Show()
 }
