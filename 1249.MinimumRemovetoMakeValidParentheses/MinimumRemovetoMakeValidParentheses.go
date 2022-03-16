@@ -1,3 +1,5 @@
+package main
+
 func minRemoveToMakeValid(s string) string {
     results := strings.Split(s, "")
     stack := []byte{}
