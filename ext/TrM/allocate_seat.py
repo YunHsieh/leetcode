@@ -40,4 +40,4 @@ def solution(n: int, s: str) -> int:
     return result
 
 assert solution(2, '1A 2F 1C') == 2
-assert solution(0, '') == 2
+assert solution(1, '') == 2
