@@ -17,26 +17,24 @@ n=1 limit="" , return = 2
 """
 
 
+def has_seat(seat_a, seat_b, prohibit):
+    for i in range(4):
+        if f"{seat_a}{chr(seat_b + i + ord('A'))}" in prohibit:
+            return False
+    return True
+    
+
 def solution(n: int, s: str) -> int:
     result = 0
     s_list = s.split(' ')
-    seat = [[0]*11 for i in range(n)]
-    for i in s_list:
-        right_number, left_number = int(i[0]), ord(i[1] - ord('A'))
-        seat[right_number][left_number] = 1
-
-    for i, data in enumerate(seat):
-        for j in [0, 3, 5]:
-            count = 0
-            verify = True
-            while count < 4:
-                if data[j+count] == 1:
-                    verify=False
-                    break
-                data[j+count] = 1
-            if verify:
-                while count < 4:
-                    data[j+count] == 1
+    start_seat = [1, 3, 5]
+    for i in range(n):
+        j = 0
+        while j < 3:
+            if has_seat(i+1, start_seat[j], s_list):
+                j+=1
+                result += 1
+            j+=1
     return result
 
 assert solution(2, '1A 2F 1C') == 2

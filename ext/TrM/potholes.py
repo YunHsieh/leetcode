@@ -18,18 +18,16 @@ import re
 def solution(s, b):
     result = 0
     potholes = re.findall(r'x+', s)
-    for i, data in enumerate(potholes):
-        potholes[i] = len(data)+1
     potholes = sorted(potholes, reverse=True)
 
     for i in potholes:
-        if b-i > 0:
-            result += i-1
-            b -= i
+        n = len(i) + 1
+        if b-n > 0:
+            result += n-1
+            b -= n
         else:
             result += b-1
             break
-            
     return result
 
 
