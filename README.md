@@ -15,6 +15,7 @@ mkdir $prefix$fname
 touch $prefix$fname/$fname.{extension name}
 
 # when push the code first time
+git checkout main
 git checkout -b feat/$prefix$fname
 git add $prefix$fname
 git commit -m "add: $prefix$fname"
