@@ -3,8 +3,22 @@
 
 # Install Golang
 ## Mac
-```
+```bash
 brew install go
+```
+
+# Rule for push
+```bash
+prefix={number}
+fname={question title}
+mkdir $prefix$fname
+touch $prefix$fname/$fname.{extension name}
+
+# when push the code first time
+git checkout -b feat/$prefix$fname
+git add $prefix$fname
+git commit -m "add: $prefix$fname"
+git push --set-upstream origin feat/$prefix$fname
 ```
 
 # How to test
