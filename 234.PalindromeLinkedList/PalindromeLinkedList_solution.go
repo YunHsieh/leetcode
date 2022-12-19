@@ -1,3 +1,5 @@
+package main
+
 var tmp *ListNode
 
 func isPalindrome(head *ListNode) bool {

@@ -1,3 +1,4 @@
+package main
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
@@ -5,7 +6,8 @@
  *     Next *ListNode
  * }
  */
- func isPalindrome(head *ListNode) bool {
+ 
+func isPalindrome(head *ListNode) bool {
     data := []int{}
     next := head
     for {

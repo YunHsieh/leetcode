@@ -1,4 +1,5 @@
 // It's not worked
+package main
 
 func isPalindromePairs(word string) bool{
     n := len(word)

@@ -1,3 +1,5 @@
+package main
+
 func isPossible(nums []int) bool {
     endsCount := map[int]int{}
     count := map[int]int{}
