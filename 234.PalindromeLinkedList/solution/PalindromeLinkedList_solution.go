@@ -1,4 +1,9 @@
-package main
+package solution
+
+type ListNode struct {
+    Val int
+    Next *ListNode
+}
 
 var tmp *ListNode
 

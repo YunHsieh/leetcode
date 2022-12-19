@@ -13,3 +13,7 @@ func isPowerOfThree(n int) bool {
         return false
     }
 }
+
+func main() {
+
+}

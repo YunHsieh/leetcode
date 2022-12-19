@@ -23,3 +23,7 @@ func ValidateStackSequences(pushed []int, popped []int) bool {
     }
     return false
 }
+
+func main() {
+
+}

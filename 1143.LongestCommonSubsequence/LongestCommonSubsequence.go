@@ -40,3 +40,7 @@ func LongestCommonSubsequence(text1 string, text2 string) int {
 	}
 	return dp[len(text1)][len(text2)]
 }
+
+func main() {
+
+}

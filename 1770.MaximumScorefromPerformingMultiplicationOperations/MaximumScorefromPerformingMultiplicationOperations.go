@@ -24,3 +24,7 @@ func maximumScore(nums []int, multipliers []int) int {
     }
     return dfs(dp, nums, multipliers, 0, 0)
 }
+
+func main() {
+
+}

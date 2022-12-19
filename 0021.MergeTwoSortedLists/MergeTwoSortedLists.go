@@ -40,3 +40,7 @@ func MergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
     nextNumber(root, list1, list2)
     return root.Next
 }
+
+func main() {
+
+}

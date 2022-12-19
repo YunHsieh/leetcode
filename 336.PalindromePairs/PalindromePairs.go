@@ -29,3 +29,7 @@ func palindromePairs(words []string) [][]int {
     }
     return results
 }
+
+func main() {
+
+}

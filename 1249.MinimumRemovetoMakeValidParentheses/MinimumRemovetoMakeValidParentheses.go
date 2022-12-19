@@ -1,5 +1,9 @@
 package main
 
+import (
+    "strings"
+)
+
 func minRemoveToMakeValid(s string) string {
     results := strings.Split(s, "")
     stack := []byte{}
@@ -27,4 +31,8 @@ func minRemoveToMakeValid(s string) string {
         }
     }
     return strings.Join(results, "")
+}
+
+func main() {
+
 }

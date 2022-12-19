@@ -9,3 +9,7 @@ func CanJump(nums []int) bool {
     }
     return n == 0
 }
+
+func main() {
+
+}

@@ -39,3 +39,7 @@ func minDepth(root *TreeNode) int {
 	}
 	return depth
 }
+
+func main() {
+
+}

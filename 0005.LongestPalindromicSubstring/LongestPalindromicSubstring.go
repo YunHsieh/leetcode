@@ -44,3 +44,7 @@ func LongestPalindrome(s string) string {
     }
     return s[result[0]:result[1]+1]
 }
+
+func main() {
+
+}

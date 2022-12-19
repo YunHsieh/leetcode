@@ -26,3 +26,7 @@ func FourSumCount(nums1 []int, nums2 []int, nums3 []int, nums4 []int) int {
     }
     return count
 }
+
+func main() {
+
+}

@@ -25,3 +25,7 @@ func FindAnagrams(s string, p string) []int {
     }
     return result
 }
+
+func main() {
+
+}

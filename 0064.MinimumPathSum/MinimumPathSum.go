@@ -20,3 +20,7 @@ func MinPathSum(grid [][]int) int {
     }
     return grid[n-1][nj-1]
 }
+
+func main() {
+
+}

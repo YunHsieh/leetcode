@@ -7,6 +7,11 @@ package main
  * }
  */
  
+type ListNode struct {
+    Val int
+    Next *ListNode
+}
+ 
 func isPalindrome(head *ListNode) bool {
     data := []int{}
     next := head
@@ -31,4 +36,8 @@ func isPalindrome(head *ListNode) bool {
         h--
         t++
     }
+}
+
+func main() {
+
 }
