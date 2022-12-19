@@ -1,6 +1,5 @@
 package main
 
-
 func groupAnagrams(strs []string) [][]string {
     words := make(map[string][]string)
     results := [][]string{}

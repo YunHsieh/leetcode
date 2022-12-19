@@ -1,9 +1,5 @@
 package main
 
-import (
-    . "fmt"
-) 
-
 func twoSum(nums []int, target int) []int {
     mapping := map[int]int{}
     for i, x := range nums {
@@ -17,6 +13,5 @@ func twoSum(nums []int, target int) []int {
 
 func main () {
     a := twoSum([]int{1,3,4,5}, 4)
-    Println(a)
-
+    println(a)
 }
