@@ -31,3 +31,7 @@ func ThreeSum(nums []int) [][]int {
     }
     return result
 }
+
+func main() {
+
+}

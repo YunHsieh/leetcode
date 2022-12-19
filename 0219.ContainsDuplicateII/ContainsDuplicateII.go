@@ -10,3 +10,7 @@ func ContainsNearbyDuplicate(nums []int, k int) bool {
     }
     return false
 }
+
+func main() {
+
+}

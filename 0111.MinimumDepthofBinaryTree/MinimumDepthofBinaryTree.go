@@ -1,9 +1,5 @@
 package main
 
-import (
-	. "fmt"
-)
-
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -42,4 +38,8 @@ func minDepth(root *TreeNode) int {
 		node = tempNode
 	}
 	return depth
+}
+
+func main() {
+
 }

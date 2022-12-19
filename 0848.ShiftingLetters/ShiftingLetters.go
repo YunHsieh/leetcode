@@ -13,3 +13,7 @@ func ShiftingLetters(s string, shifts []int) string {
     }
     return string(res)
 }
+
+func main() {
+
+}

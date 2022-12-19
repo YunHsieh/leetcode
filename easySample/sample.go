@@ -8,23 +8,21 @@
 package main
 
 import (
-	"fmt"
+    "strconv"
 )
 
-func fizzBuzz(n int32) {
-    for i:=int32(1); n>=i; i++{
+func fizzBuzz(n int64) string {
+    result := ""
+    for i:=int64(1); n>=i; i++{
         if i % 3 == 0 && i % 5 == 0{
-            fmt.Println("FizzBuzz")
+            result += "FizzBuzz"
         } else if i % 5 == 0{
-            fmt.Println("Buzz")
+            result += "Buzz"
         } else if i % 3 == 0{
-            fmt.Println("Fizz")
+            result += "Fizz"
         } else {
-            fmt.Println(i)
+            result += strconv.FormatInt(i, 10)
         }
     }
-}
-
-func main(){
-	fizzBuzz(15)
+    return result
 }

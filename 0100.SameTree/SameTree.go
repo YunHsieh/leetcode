@@ -1,9 +1,5 @@
 package main
 
-import (
-    . "fmt"
-) 
-
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -12,6 +8,12 @@ import (
  *     Right *TreeNode
  * }
  */
+
+type TreeNode struct {
+    Val int
+    Left *TreeNode
+    Right *TreeNode
+}
 
 func isSameTree(p *TreeNode, q *TreeNode) bool {
     if p == nil && q == nil {
@@ -26,5 +28,6 @@ func isSameTree(p *TreeNode, q *TreeNode) bool {
     }
 }
 
-func main () {
+func main() {
+
 }

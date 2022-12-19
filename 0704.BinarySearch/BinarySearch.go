@@ -1,3 +1,5 @@
+package main
+
 func search(nums []int, target int) int {
     head, tail := -1, len(nums)
     var middle int
@@ -12,4 +14,8 @@ func search(nums []int, target int) int {
         }
     }
     return -1
+}
+
+func main() {
+
 }

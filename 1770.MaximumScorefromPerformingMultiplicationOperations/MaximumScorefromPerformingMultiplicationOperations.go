@@ -1,3 +1,5 @@
+package main
+
 func max(a, b int) int {
     if a > b {
         return a
@@ -21,4 +23,8 @@ func maximumScore(nums []int, multipliers []int) int {
         dp[i] = make([]int, len(multipliers))
     }
     return dfs(dp, nums, multipliers, 0, 0)
+}
+
+func main() {
+
 }

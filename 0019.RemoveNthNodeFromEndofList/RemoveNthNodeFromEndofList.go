@@ -30,3 +30,7 @@ func RemoveNthFromEnd(head *ListNode, n int) *ListNode {
     allNode[0].Next = allNode[0].Next.Next
     return head
 }
+
+func main() {
+
+}

@@ -1,3 +1,10 @@
+package solution
+
+type ListNode struct {
+    Val int
+    Next *ListNode
+}
+
 var tmp *ListNode
 
 func isPalindrome(head *ListNode) bool {

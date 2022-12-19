@@ -1,3 +1,5 @@
+package main
+
 func isPowerOfThree(n int) bool {
     if n == 0 {
         return false
@@ -10,4 +12,8 @@ func isPowerOfThree(n int) bool {
     } else {
         return false
     }
+}
+
+func main() {
+
 }

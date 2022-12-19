@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func ValidateStackSequences(pushed []int, popped []int) bool {
 	results := []int{}
 	pushedN := len(pushed)
@@ -26,4 +22,8 @@ func ValidateStackSequences(pushed []int, popped []int) bool {
     	return true
     }
     return false
+}
+
+func main() {
+
 }

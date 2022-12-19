@@ -1,5 +1,9 @@
 package main
 
+import (
+    "strings"
+    "sort"
+)
 
 func groupAnagrams(strs []string) [][]string {
     words := make(map[string][]string)
@@ -14,4 +18,8 @@ func groupAnagrams(strs []string) [][]string {
         results = append(results, val)
     }
     return results
+}
+
+func main() {
+
 }

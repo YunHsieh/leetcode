@@ -1,9 +1,5 @@
 package main
 
-import (
-    . "fmt"
-) 
-
 func AbsoluteValue(num int) int {
     if num < 0 {
         return -1*num
@@ -52,5 +48,5 @@ func ShipWithinDays(weights []int, days int) int {
 
 func main () {
     max := ShipWithinDays([]int{10,5,2,4,8,9,1,8,1,2}, 4)
-    Println(max)
+    println(max)
 }
