@@ -1,3 +1,8 @@
+"""
+T: 95.33%
+M: 99.8%
+"""
+
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
         s = s.split(" ")
